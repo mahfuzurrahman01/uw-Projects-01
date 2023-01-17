@@ -1,0 +1,22 @@
+body {
+    margin: 2em;
+    color: #000;
+    background-color: #fff;
+}
+
+@media print {
+
+    body {
+        width: 21cm;
+        height: 29.7cm;
+        color: #000;
+        background-color: #fff;
+        margin: 2em;
+    }
+
+}
+
+@page {
+    size: 21cm 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+}
