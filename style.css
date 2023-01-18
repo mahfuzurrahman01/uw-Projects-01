@@ -1,8 +1,13 @@
-body {
+/* body {
     margin: 2em;
     color: #000;
-    background-color: #fff;
+    background-color: "red";
 }
+
+.bg{
+    background-color: "red";
+}
+
 
 @media print {
 
@@ -13,10 +18,53 @@ body {
         background-color: #fff;
         margin: 2em;
     }
-
+    .bg-black{
+        background-color: "black" !important;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+    }
 }
 
-@page {
+
+/* @page {
     size: 21cm 29.7cm;
     margin: 30mm 45mm 30mm 45mm;
+} */
+
+
+.bg {
+    background-color: black !important;
+    color: white !important;
+}
+
+body {
+    height: 100vh;
+    margin: 2em;
+    color: #000;
+    background-color: #fff;
+}
+
+@media print {
+    .bg {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    body {
+        width: 27cm;
+        max-height: 29.7cm;
+        margin: 0rem;
+        /* line-height: 17px; */
+    }
+    p{
+        font-size: 10px;
+    }
+
+    title {
+        display: none;
+    }
+    /* section{
+        padding: 0px;
+    } */
+
 }
